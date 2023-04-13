@@ -1,172 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Portfolio</title>
-        <link rel="stylesheet" href="assets/css/styles.css">
-         <!-- CSS only -->
-         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    </head>  
-    
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg">
-
-               <div class="container-fluid">
-                <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/" target="_blank"  > 
-                   <img src="assets/img/argentina-programa.jpg" alt="Logo de Argentina Programa"><h1 style="color:rgb(255, 255, 255)">Argentina Programa</h1></a>
-                
-                  <div class="max-container">
-
-                    <a href="#"> <i class="bi bi-facebook" style="color:red;"> </i></a>
-                         
-                    <a href="#"><i class="bi bi-envelope-at" style="color:red;"></i> </a>
-                       
-                    <button type="button"class="btn btn-outline-danger" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"> 
-                               Login
-                    </button>
-                    <form class="dropdown-menu p-4">
-                        <div class="mb-3">
-                            <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>My Portfolio</title>
+      <link rel="stylesheet" href="assets/css/styles.css">
+      <!-- CSS only -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  </head>  
+  <body>
+    <!--cabecera-->
+    <header>
+      <!-- barra de navegacion-->
+      <nav class="navbar">
+        <!-- logo del curso y redes-->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/" target="_blank"  > 
+          <img src="assets/img/argentina-programa.jpg" alt="Logo de Argentina Programa"class="d-inline-block align-text-top"><p class="text-light">Argentina Programa</p></a>
+          <div class="max-container mb-3">
+            <a href="#"target="_blank" > <i class="bi bi-facebook"> </i></a>
+            <a href="#"target="_blank" > <i class="bi bi-github" > </i></a>    
+            <!--boton de login-->         
+            <button type="button"class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-auto-close="outside"> 
+              Login
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="px-4 py-3">
+                      <div class="mb-3">
+                        <label for="exampleDropdownFormEmail1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@examplo.com">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleDropdownFormPassword1" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Contraseña">
+                      </div>
+                      <div class="mb-3">
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                          <label class="form-check-label" for="dropdownCheck">
+                            Recordar
+                          </label>
                         </div>
-                        <div class="mb-3">
-                             <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
-                             <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
-                        </div>
-                        <div class="mb-3">
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="dropdownCheck2">
-                                <label class="form-check-label" for="dropdownCheck2">
-                                      Remember me
-                                 </label>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Sign in</button>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Iniciar sesión</button>
                     </form>
-                 </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Acceder</button>
+                  </div>
                 </div>
-            </nav>
-          
-            <img src="assets/img/banner.jpg.JPG" class="img-fluid" alt="banner">
-           
-        </header>
-
-        <nav class="barra">
-            <div class="menu-container-fluid">
-                <button class="btn btn-sm btn-outline-danger" type="button"> <a href="#" style="color:red"> Sobre Mi </a></button>
-                <button class="btn btn-sm btn-outline-danger" type="button"><a href="#" style="color:red"> Experiencia Laboral </a> </button>
-                <button class="btn btn-sm btn-outline-danger" type="button"> <a href="#" style="color:red"> Educacion </a> </button>
-                <button class="btn btn-sm btn-outline-danger" type="button"> <a href="#" style="color:red"> Hard y Soft Skills </a> </button>
-                <button class="btn btn-sm btn-outline-danger" type="button"><a href="#" style="color:red"> Proyectos </a> </button>
-                <button class="btn btn-sm btn-outline-danger" type="button"> <a href="#" style="color:red"> Contacto </a></button>
-         </div>
-        </nav>
-        <section class="img-fluid">
-            <article>
-               <div class="foto-perfil">
-                  <img src="assets/img/IMG-foto.jpg" alt="foto de perfil">
-                  <h1>Romina Diaz</h1>
-                  <h3>Full Stack Developer Jr</h3>
-               </div>
-               <div class="text-center">
-                  <p>Hola, soy Romi, ama de casa con muchas ganas de trabajar. Quisiera empezar diciendo que soy muy creativa, habilidad que fuí desarrollando mientras trabajaba de niñera. Soy muy responsable y me desenvuelvo muy bien al momento de resolver problemas. Cabe destacar que tengo alma de líder, pero también sé acatar órdenes. Me adapto con facilidad a los cambios y mis mejores ideas se me ocurren por la noche.  
-                  </p>
-                  <div class="container">
-                  <button class="btn btn-sm btn-outline-light" type="button"> 
-                       <i class="bi bi-pencil-fill"></i>
-                       <i class="bi bi-x-circle-fill"></i>
-                  </button> 
-                </div>
-            </article>
-
-            <article class="text-fluid">
-                 <h1>Experiencia Laboral:</h1>
-                 <ul>
-                     <li><a href="https://website-269630740463780450178-hotel.negocio.site/" target="_blank"><img src="screenshot-20190115-001415.jpg" alt="logo del hotel capri" width="5%"></a> <b>Hotel Capri:</b> maestranza, recepcionista, administración. (año:2016 y 2017)</li>
-                     <li> <b>Niñera:</b> cuidé durante tres años a 2 niños. (años: 2017/2020)</li>
-                     <li> <b>Niñera:</b> cuidé durante año y medio a 4 niños. (año:2021 y 2022) </li>
-                     <li> <b> Empleada Doméstica:</b> durante 5 años realicé planchados en casa particular (años: 2015/2020)</li>
-                     <li> <a href="https://www.facebook.com/anastacia.perriere" target="_blank"> <img src="narc273049714_471410877910960_3195748947275081422_n.jpg" alt="lodo de peluqueria narcisa" width="5%"></a>  <b>Ayudante en peluquería:</b> Actualmente, cuando en la peluquería <b>Narcisa</b> me necesitan, estoy full time. Desde el año 2022, realizo lavado en bacha, secado más peinado y tratamientos capilares. </li>
-                 </ul>
-                 <div class="container">
-                 <button class="btn btn-sm btn-outline-light" type="button"> 
-                    <i class="bi bi-pencil-fill"></i>
-                    <i class="bi bi-x-circle-fill"></i>
-               </button> 
+              </div>
             </div>
-            </article>
-
-            <article class="text-fluid">
-                <h1> Estudios: </h1>
-                <ul>
-                   <li><b>Primaria Completa: </b>Escuela N° 157 GOBERNADOR JORGE JOSÉ GALINA. Es un Colegio Estatal en Chubut-Trelew. 
-                    Dirección:Gobernador Lezana 1650 Villa Italia - TRELEW - RAWSON -  Tel.: 280 - 4421181</li>
-                   <li><b> Secundaria Incompleta:</b> Colegio Provincial de Educación Secundaria Nº 20 GRAL. JOSÉ DE SAN MARTÍN. Es un Colegio Estatal en Santa Cruz-Caleta Olivia.
-                   Dirección:JOSÉ KOLTUM 1370 LOS PINOS - CALETA OLIVIA - DESEADO - Tel.: 297 - 4854056 </li>
-                   <li><b>Argentina Programa #Sé Programar:</b><a href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa"  target="_blank" style="color: white;">Argentina Programa</a></li>
-                </ul>
-                <div class="container">
-                   <button class="btn btn-sm btn-outline-light" type="button"> 
-                    <i class="bi bi-pencil-fill"></i>
-                    <i class="bi bi-x-circle-fill"></i>
-                   </button> 
-                </div>
-            </article>
-
-            <article class="text-fluid">
-                 <h1>Hard y Soft Skills:</h1>
-                 <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar overflow-visible text-dark" style="width: 20%">HTML</div>
-                  </div>
-                  <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar bg-warning overflow-visible text-dark" style="width: 10%">CSS</div>
-                  </div>
-                  <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar bg-danger overflow-visible text-dark" style="width: 10%">BOOTSTRAP</div>
-                  </div>
-                  <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar bg-info overflow-visible text-dark" style="width: 5%">JAVASCRIPT </div>
-                  </div>
-                  <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar bg-success overflow-visible text-dark" style="width: 3%">ANGULARjS</div>
-                  </div>
-                  
-                  <div class="container">
-                    <button class="btn btn-sm btn-outline-light" type="button"> 
-                    <i class="bi bi-pencil-fill"></i>
-                    <i class="bi bi-x-circle-fill"></i>
-               </button> 
-            </div>
-            </article>
-
-            <article class="text-fluid">
-                <h1>Proyectos:</h1>
-                <p> MI PORTFOLIO: Es mi primer proyecto. Si bien empecé el curso de Argentina Programa en Octubre del año 2022, el proyecto en sí empecé a realizarlo una vez que tuve una computadora para hacerlo, o sea hace 3 semanas, gracias a una amiga que me presto.</p>
-                <p> Este artículo va a ser editado con más información.</p>
-                <div class="container">
-                    <button class="btn btn-sm btn-outline-light  " type="button"> 
-                    <i class="bi bi-pencil-fill"></i>
-                    <i class="bi bi-x-circle-fill"></i>
-                   </button> 
-                 </div>
-            </article>
-        </section>
-
-        <footer class="max-container">
-            <div class="container">
-            
-                <a href="#"> <i class="bi bi-whatsapp" style="color:red;"> </i></a>
-                <a href="#"> <i class="bi bi-facebook" style="color:red;"> </i></a>    
-                <a href="#"><i class="bi bi-envelope-at" style="color:red;"></i> </a>
-            
+          </div>
         </div>
-         </footer>
-
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>   
-    </body>
+      </nav>
+      <!-- banner-->
+      <img src="assets/img/banner.jpg.JPG" class="img-fluid" alt="banner">
+    </header>
+    <!--menu de contenidos de la pag.-->
+    <div class="container-fluid">
+      <nav class="navbar-brand">
+        <button class="btn btn-sm btn-outline-danger" type="button"><a class="nav-link"href="#">Sobre Mi</a></button>
+        <button class="btn btn-sm btn-outline-danger" type="button"><a class="nav-link" href="#">Experiencia Laboral</a></button>
+        <button class="btn btn-sm btn-outline-danger" type="button"><a class="nav-link" href="#">Educación</a></button>
+        <button class="btn btn-sm btn-outline-danger" type="button"><a class="nav-link" href="#">Hard y Soft Skills</a></button> 
+        <button class="btn btn-sm btn-outline-danger" type="button"><a class="nav-link" href="#">Proyectos</a></button> 
+        <button class="btn btn-sm btn-outline-danger" type="button"><a class="nav-link" href="#">Contactos</a></button> 
+      </nav>
+    </div>
+    <!-- seccion con imagen de fondo-->
+    <main class="img-fluid">
+      <!--seccion con foto, nombre, titulo y acerca de...-->
+      <section id="sobre-mi" >
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 pt-3">
+              <img src="assets/img/IMG-foto.jpg" alt="foto de perfil">
+              <h1>Romina Diaz</h1>
+              <h4>Full Stack Developer Jr</h4>
+            </div>
+            <div class="col-sm-7 pt-5 fs-5">
+              <p class="text-break fw-bold lh-base"> Soy Romi, ama de casa con muchas ganas de trabajar. Quisiera empezar diciendo que soy muy creativa, habilidad que fuí desarrollando mientras trabajaba de niñera. Soy muy responsable y me desenvuelvo muy bien al momento de resolver problemas. Cabe destacar que tengo alma de líder, pero también sé acatar órdenes. Me adapto con facilidad a los cambios y mis mejores ideas se me ocurren por la noche.  
+              </p>
+            </div>
+            <div class="col-sm-1"></div>
+          </div>
+        </div>
+      </section>
+      <!-- en esta seccion , mi experiencia laboral-->
+      <section id="experiencia-laboral">
+        <h3 class="text-fluid">Experiencia Laboral:</h3>
+        <div class="container text-light">
+          <div class="row justify-content-start">
+            <div class="col-4">
+              <h4> Empleada Doméstica:</h4>
+            </div>
+            <div class="col-7 fs-5">
+              <p class="text-break fw-bold lh-sm overflow-visible">
+               Me desempeñé en tareas como: planchados de ropa y limpieza en general en casa particular (años: 2015/2020)</p>
+            </div>
+            <div class="col-1"></div>
+          </div>
+        </div>
+        <div class="container text-light">
+          <div class="row justify-content-start">
+            <div class="col-4">
+              <a href="https://website-269630740463780450178-hotel.negocio.site/" target="_blank">
+              <img src="screenshot-20190115-001415.jpg" alt="logo del hotel capri"></a>
+              <h4>Hotel Capri:</h4>
+            </div>
+            <div class="col-7 fs-5">
+              <p class="text-break fw-bold lh-sm overflow-visible">
+              Me desempeñé en tareas como: maestranza, recepcionista y administración. (año:2016 y 2017)</p>
+            </div>
+            <div class="col-1"></div>
+          </div>
+        </div>
+        <div class="container text-light">
+          <div class="row justify-content-start">
+            <div class="col-4">
+              <h4>Niñera:</h4>
+            </div>
+            <div class="col-7 fs-5">
+              <p class="text-break fw-bold lh-sm overflow-visible">
+               Me desempeñé en tareas como: cuidado de niños, cocinar y ayudar con tareas escolares. (años: 2017/2020)</p>
+            </div>
+            <div class="col-1"></div>
+          </div>
+        </div>
+        <div class="container text-light">
+          <div class="row justify-content-start">
+            <div class="col-4">
+              <h4>Niñera:</h4>
+            </div>
+            <div class="col-7 fs-5">
+              <p class="text-break fw-bold lh-sm overflow-visible">
+               Me desempeñé en tareas como: cuidado de niños, cocinar y limpieza en general. (año:2021 y 2022)</p>
+            </div>
+            <div class="col-1"></div>
+          </div>
+        </div>    
+        <div class="container text-light">
+          <div class="row justify-content-start">
+            <div class="col-4">
+              <a href="https://www.facebook.com/anastacia.perriere" target="_blank">
+              <img src="narc273049714_471410877910960_3195748947275081422_n.jpg" alt="lodo de peluqueria narcisa"></a>
+              <h4>Ayudante en peluquería:</h4>
+            </div>
+            <div class="col-7 fs-5">
+              <p class="text-break fw-bold lh-sm overflow-visible">
+              Actualmente, cuando en la peluquería <b>Narcisa</b> me necesitan, estoy full time. Desde el año 2022, realizo lavado en bacha, secado más peinado y tratamientos capilares.</p>
+            </div>
+            <div class="col-1"></div>
+          </div>
+        </div>        
+      </section>
+      <!-- aquí se encuentra mis estudios-->
+      <section id="estudios">
+        <h3 class="text-fluid"> Estudios: </h3>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card text-bg-danger mb-3">
+                <div class="card-body">
+                  <h5 class="card-title overflow-visible">Primaria Completa: </h5>
+                  <p class="card-text">Escuela N° 157 GOBERNADOR JORGE JOSÉ GALINA. Es un Colegio Estatal en Chubut-Trelew. Dirección:Gobernador Lezana 1650 Villa Italia - TRELEW - RAWSON -  Tel.: 280 - 4421181</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card text-bg-danger mb-3">
+                <div class="card-body">
+                  <h5 class="card-title overflow-visible">Secundaria Incompleta:</h5>
+                  <p class="card-text"> Colegio Provincial de Educación Secundaria Nº 20 GRAL. JOSÉ DE SAN MARTÍN. Es un Colegio Estatal en Santa Cruz-Caleta Olivia. Dirección:JOSÉ KOLTUM 1370 LOS PINOS - CALETA OLIVIA - DESEADO - Tel.: 297 - 4854056 </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card text-bg-danger mb-3">
+                <div class="card-body">
+                  <h5 class="card-title overflow-visible">Argentina Programa #Sé Programar:</h5>
+                  <p class="card-text"><a href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa"  target="_blank" style="color: white;">Argentina Programa</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- secccion de habilidades-->
+      <section id="habilidades" >
+        <h4 class="text-fluid">Hard y Soft Skills:</h4>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-sm-2">
+              <i class="bi bi-filetype-html" ></i>
+            </div>
+            <div class="col-sm-10 pt-4">
+              <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar overflow-visible text-dark" style="width: 20%">20%</div>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <i class="bi bi-filetype-css"></i>
+            </div>
+            <div class="col-sm-10 pt-4">
+              <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-warning overflow-visible text-dark" style="width: 10%">10%</div>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <i class="bi bi-bootstrap"></i>
+            </div>
+            <div class="col-sm-10 pt-4">
+              <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-danger overflow-visible text-dark" style="width: 10%"> 10%</div>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <i class="bi bi-filetype-js"></i>
+            </div>
+            <div class="col-sm-10 pt-4">
+              <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+               <div class="progress-bar bg-info overflow-visible text-dark" style="width: 5%"> 5%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- seccion de proyectos-->
+      <section id="proyectos">
+        <div class="container text-light ">
+          <h4 class="text-fluid" >Proyectos:</h4>
+          <p class="text-break fw-bold lh-base "> MI PORTFOLIO: Es mi primer proyecto. Si bien empecé el curso de Argentina Programa en Octubre del año 2022, el proyecto en sí empecé a realizarlo una vez que tuve una computadora para hacerlo, o sea hace 3 semanas, gracias a una amiga que me presto.</p>
+          <p class="text-break fw-bold lh-base fs-5"> Este artículo va a ser editado con más información.</p>
+        </div>
+      </section>
+    </main>
+    <!-- pie de pagina, contiene contactos-->
+    <footer class="max-container">
+      <address>
+        <a href="#"> <i class="bi bi-whatsapp" style="color:red;"> </i></a>
+        <a href="#"> <i class="bi bi-facebook" style="color:red;"> </i></a>
+        <a href="#"><i class="bi bi-envelope-at" style="color:red;"></i> </a>
+      </address>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>   
+  </body>
 </html>
