@@ -14,13 +14,12 @@ header{
 /*  estilo al logo */
 .container-fluid img{
     border-radius: 1rem;
-    width: 3.5rem; 
+    width: 3rem; 
     height: 2.5rem;  
 }
 /* estilo a las redes*/
 .max-container a {
-    text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     text-decoration: none;
     color:rgb(255, 0, 0)
 }
@@ -40,8 +39,8 @@ header{
     align-content: center;
     background-color: rgb(0, 7, 7);
  }
-/* fondo de seccion*/
-section {
+/* imagen de fondo*/
+.img-fondo{
     background-image: url(../img/fondo2.png);
     background-position: center center;
 /* Para que la imagen de fondo no se repita */
@@ -89,36 +88,50 @@ section {
 .container-center{
     margin: 3% 5%;
 }
-.bi.bi-filetype-html{
-    font-size: 3rem;
-    color:rgb(46, 136, 221);
-}
-.bi.bi-filetype-css{
-    font-size: 3rem;
-    color: rgb(247, 243, 7);
-}
-.bi.bi-bootstrap{
-    font-size: 3rem;
-    color: rgb(226, 22, 90);
-}
-.bi.bi-filetype-js{
-    font-size: 3rem;
-    color: rgb(32, 177, 177);
+.col-sm-2 i{
+    font-size: 5rem;
 }
 /* estilo a pie de pag.*/
 footer{ 
     background-color: black;
     text-decoration: none;
 }
-/*estilo a contactos*/
+/*estilo a pie de pagina*/
 address{ 
      display: flex;
-     justify-content: right;
+     justify-content: right;  
 }
 /*logo de redes en pie de pagina */
 address a{
-    margin-right: 1.5rem;
+    font-size: 1.8rem ;
+margin-right: 2rem;
+color:rgb(248, 3, 3)
 }
-
+/*administracion*/
+main{
+    background-color: rgb(248, 92, 2);
+}
+.dashboard{
+    margin: 1% 5%;
+    overflow-y: hidden;
+}
+.accordion-button:not(.collapsed) {
+    --bs-accordion-active-color: rgb(0, 0, 0);
+    --bs-accordion-active-bg : red;
+    overflow-y: hidden;
+ }
+ .accordion-header{
+    overflow-y: hidden;
+ }
+.accordion-header button{
+    overflow-y: hidden !important;
+    font-style: oblique;
+    font-size: smaller;
+    color:rgb(250, 7, 7)
+}
+.accordion-header button i{
+    color: rgb(0, 0, 0);
+    overflow-y: hidden;
+}
 
   
