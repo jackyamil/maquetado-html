@@ -113,25 +113,18 @@ main{
 }
 .dashboard{
     margin: 1% 5%;
-    overflow-y: hidden;
 }
 .accordion-button:not(.collapsed) {
     --bs-accordion-active-color: rgb(0, 0, 0);
     --bs-accordion-active-bg : red;
-    overflow-y: hidden;
- }
- .accordion-header{
-    overflow-y: hidden;
  }
 .accordion-header button{
-    overflow-y: hidden !important;
     font-style: oblique;
-    font-size: smaller;
-    color:rgb(250, 7, 7)
+    font-size: large;
+    color:rgb(250, 7, 7);
 }
 .accordion-header button i{
     color: rgb(0, 0, 0);
-    overflow-y: hidden;
 }
 
   
