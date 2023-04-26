@@ -8,188 +8,233 @@
       <link rel="stylesheet" href="assets/css/styles.css">
       <!-- CSS only -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-      <script src="https://kit.fontawesome.com/2fda132b3b.js" crossorigin="anonymous"></script>  </head>  
+      <script src="https://kit.fontawesome.com/2fda132b3b.js" crossorigin="anonymous"></script>  
+  </head>  
   <body>
     <!--cabecera-->
     <header>
       <!-- barra de navegacion-->
-      <nav class="navbar">
+      <nav class="navbar p-0" >
         <!-- logo del curso y redes-->
-        <div class="container-fluid">
-          <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/" target="_blank"  > 
-          <img src="assets/img/argentina-programa.jpg" alt="Logo de Argentina Programa"class="d-inline-block align-text-top"><p class="text-light">Argentina Programa</p></a>
-          <div class="max-container">
-            <a href="#"target="_blank" > <i class="fa-brands fa-facebook"></i></a>
-            <a href="#"target="_blank" > <i class="fa-brands fa-github"></i></a>    
-            <!--boton de login-->         
-            <button type="button"class="btn btn-outline-danger mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-auto-close="outside"> 
-              Login
-            </button>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <form class="px-4 py-3">
-                      <div class="mb-3">
-                        <label for="exampleDropdownFormEmail1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@examplo.com">
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleDropdownFormPassword1" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Contraseña">
-                      </div>
-                      <div class="mb-3">
-                        <div class="form-check">
-                          <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                          <label class="form-check-label" for="dropdownCheck">
-                            Recordar
-                          </label>
-                        </div>
-                      </div>
-                      <button type="submit" class="btn btn-primary">Iniciar sesión</button>
-                    </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Acceder</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="container-fluid pt-1">
+          <a class="navbar-brand pt-0 m-0" href="http://127.0.0.1:5500/index.html">
+            <img src="assets/img/argentina-programa.jpg" alt="Logo de Argentina Programa"class="d-inline-block align-text-top">
+            <p class="text-light m-0">Argentina Programa</p>
+          </a>
+          <div class="max-container mt-2">
+            <ul id="redes" class="m-0 p-0">
+              <li>
+                <a href="https://codepen.io/"target="_blank">
+                  <i class="fa-brands fa-codepen"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://ar.linkedin.com/"target="_blank">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/"target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
+              <!--boton de login-->
+              <li>
+                <button type="button"class="btn btn-outline-danger mb-3 px-0">
+                  <a href="http://127.0.0.1:5500/login.html#" class="mx-4">
+                    <i class="fa-solid fa-lock"></i>
+                  </a>
+                </button>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
-      <!-- banner-->
-      <img src="assets/img/banner.jpg.JPG" class="img-fluid" alt="banner">
     </header>
+    <!-- banner-->
+    <div class="container-center">
+      <img src="assets/img/banner.jpg.JPG" class="img-fluid" alt="banner">
+    </div>
     <!--menu de contenidos de la pag.-->
     <div class="container-fluid">
-      <nav class="navbar-brand">
-        <button class="btn btn-sm btn-outline-danger" type="button"><a class="nav-link"href="#">Sobre Mi</a></button>
-        <button class="btn btn-sm btn-outline-danger" type="button"><a class="nav-link" href="#">Experiencia Laboral</a></button>
-        <button class="btn btn-sm btn-outline-danger" type="button"><a class="nav-link" href="#">Educación</a></button>
-        <button class="btn btn-sm btn-outline-danger" type="button"><a class="nav-link" href="#">Hard y Soft Skills</a></button> 
-        <button class="btn btn-sm btn-outline-danger" type="button"><a class="nav-link" href="#">Proyectos</a></button> 
-        <button class="btn btn-sm btn-outline-danger" type="button"><a class="nav-link" href="#">Contactos</a></button> 
+      <nav class="navbar-brand p-2">
+        <button class="btn btn-sm btn-outline-danger" type="button">
+          <a class="nav-link"href="#sobre-mi">
+            <i class="fa-solid fa-id-card"></i>
+            Sobre Mi
+          </a>
+        </button>
+        <button class="btn btn-sm btn-outline-danger" type="button">
+          <a class="nav-link" href="#experiencia-laboral">
+            <i class="fa-solid fa-briefcase"></i>
+            Experiencia Laboral
+          </a>
+        </button>
+        <button class="btn btn-sm btn-outline-danger" type="button">
+          <a class="nav-link" href="#estudios">
+            <i class="fa-solid fa-graduation-cap"></i>
+            Educación
+          </a>
+        </button>
+        <button class="btn btn-sm btn-outline-danger" type="button">
+          <a class="nav-link" href="#habilidades">
+            <i class="fa-solid fa-bars-progress"></i>
+            Hard y Soft Skills
+          </a>
+        </button>
+        <button class="btn btn-sm btn-outline-danger" type="button">
+          <a class="nav-link" href="#proyectos">
+            <i class="fa-solid fa-house-laptop"></i>
+            Proyectos
+          </a>
+        </button>
+        <button class="btn btn-sm btn-outline-danger" type="button">
+          <a class="nav-link" href="#contacto">
+            <i class="fa-solid fa-mobile-screen"></i>
+            Contactos
+          </a>
+        </button>
       </nav>
     </div>
     <!-- seccion con imagen de fondo-->
     <main class="img-fondo">
       <!--seccion con foto, nombre, titulo y acerca de...-->
-      <section id="sobre-mi" >
-       <div class="container">
+      <section id="sobre-mi">
+        <div class="container">
           <div class="row">
-            <div class="col-sm-4 pt-3">
-              <img src="assets/img/IMG-foto.jpg" alt="foto de perfil">
-              <h1>Romina Diaz</h1>
-              <h4>Full Stack Developer Jr</h4>
-            </div>
-            <div class="col-sm-7 pt-5 fs-5">
-              <p class="text-break fw-bold lh-base"> Soy Romi, ama de casa con muchas ganas de trabajar. Quisiera empezar diciendo que soy muy creativa, habilidad que fuí desarrollando mientras trabajaba de niñera. Soy muy responsable y me desenvuelvo muy bien al momento de resolver problemas. Cabe destacar que tengo alma de líder, pero también sé acatar órdenes. Me adapto con facilidad a los cambios y mis mejores ideas se me ocurren por la noche.  
-              </p>
+            <div class="col-sm-4">
+              <img src="assets/img/IMG-foto.jpg" class="img-fluid" alt="foto de perfil">
+              <h1 class="text-break">Romina Diaz</h1>
+              <h4 class="text-break">Full Stack DeveloperJr</h4>
             </div>
             <div class="col-sm-1"></div>
+            <div class="col-sm-7 pt-5 fs-5">
+              <p class="text-break fw-bold lh-base"> Soy ama de casa con muchas ganas de trabajar. Quisiera empezar diciendo que soy muy creativa, habilidad que fuí desarrollando mientras trabajaba de niñera. Soy muy responsable y me desenvuelvo muy bien al momento de resolver problemas. Cabe destacar que tengo alma de líder, pero también sé acatar órdenes. Me adapto con facilidad a los cambios y mis mejores ideas se me ocurren por la noche.  
+              </p>
+            </div>
           </div>
         </div>
       </section>
       <!-- en esta seccion , mi experiencia laboral-->
       <section id="experiencia-laboral">
-        <h3 class="text-fluid">Experiencia Laboral:</h3>
+        <h3 class="text-fluid mb-5">Experiencia Laboral:</h3>
         <div class="container text-light">
           <div class="row justify-content-start">
             <div class="col-4">
-              <h4> Empleada Doméstica:</h4>
+              <img src="assets/img/planchado.png" alt="logo de planchados">
+              <h4 class="text-break"> Empleada Doméstica:</h4>
             </div>
-            <div class="col-7 fs-5">
+            <div class="col-8 fs-5">
               <p class="text-break fw-bold lh-sm overflow-visible">
-               Me desempeñé en tareas como: planchados de ropa y limpieza en general en casa particular (años: 2015/2020)</p>
+                Me desempeñé en tareas como: planchados de ropa y limpieza en general en casa particular (años: 2015/2020)
+              </p>
             </div>
-            <div class="col-1"></div>
           </div>
         </div>
         <div class="container text-light">
           <div class="row justify-content-start">
             <div class="col-4">
               <a href="https://website-269630740463780450178-hotel.negocio.site/" target="_blank">
-              <img src="assets/img/screenshot-20190115-001415.jpg" alt="logo del hotel capri"></a>
-              <h4>Hotel Capri:</h4>
+                <img src="assets/img/screenshot-20190115-001415.jpg" alt="logo del hotel capri">
+              </a>
+              <h4 class="text-break">Hotel Capri:</h4>
             </div>
-            <div class="col-7 fs-5">
+            <div class="col-8 fs-5">
               <p class="text-break fw-bold lh-sm overflow-visible">
-              Me desempeñé en tareas como: maestranza, recepcionista y administración. (año:2016 y 2017)</p>
+                Me desempeñé en tareas como: maestranza, recepcionista y administración. (año:2016 y 2017)
+              </p>
             </div>
-            <div class="col-1"></div>
           </div>
         </div>
         <div class="container text-light">
           <div class="row justify-content-start">
             <div class="col-4">
-              <h4>Niñera:</h4>
+              <img src="assets/img/ninera.png" alt="logo de Niñera">
+              <h4 class="text-break">Niñera:</h4>
             </div>
-            <div class="col-7 fs-5">
+            <div class="col-8 fs-5">
               <p class="text-break fw-bold lh-sm overflow-visible">
-               Me desempeñé en tareas como: cuidado de niños, cocinar y ayudar con tareas escolares. (años: 2017/2020)</p>
+                Me desempeñé en tareas como: cuidado de niños, cocinar y ayudar con tareas escolares. (años: 2017/2020)
+              </p>
             </div>
-            <div class="col-1"></div>
           </div>
         </div>
         <div class="container text-light">
           <div class="row justify-content-start">
             <div class="col-4">
-              <h4>Niñera:</h4>
+              <img src="assets/img/ninera.png" alt="logo de Niñera">
+              <h4 class="text-break">Niñera:</h4>
             </div>
-            <div class="col-7 fs-5">
+            <div class="col-8 fs-5">
               <p class="text-break fw-bold lh-sm overflow-visible">
-               Me desempeñé en tareas como: cuidado de niños, cocinar y limpieza en general. (año:2021 y 2022)</p>
+                Me desempeñé en tareas como: cuidado de niños, cocinar y limpieza en general. (año:2021 y 2022)
+              </p>
             </div>
-            <div class="col-1"></div>
           </div>
-        </div>    
+        </div>
         <div class="container text-light">
           <div class="row justify-content-start">
             <div class="col-4">
               <a href="https://www.facebook.com/anastacia.perriere" target="_blank">
-              <img src="assets/img/narc273049714_471410877910960_3195748947275081422_n.jpg" alt="lodo de peluqueria narcisa"></a>
-              <h4>Ayudante en peluquería:</h4>
+                <img src="assets/img/narc273049714_471410877910960_3195748947275081422_n.jpg" alt="lodo de peluqueria narcisa">
+              </a>
+              <h4 class="text-break">Ayudante en peluquería:</h4>
             </div>
-            <div class="col-7 fs-5">
+            <div class="col-8 fs-5">
               <p class="text-break fw-bold lh-sm overflow-visible">
-              Actualmente, cuando en la peluquería <b>Narcisa</b> me necesitan, estoy full time. Desde el año 2022, realizo lavado en bacha, secado más peinado y tratamientos capilares.</p>
+                Actualmente, cuando en la peluquería <b>Narcisa</b> me necesitan, estoy full time. Desde el año 2022, realizo lavado en bacha, secado más peinado y tratamientos capilares.
+              </p>
             </div>
-            <div class="col-1"></div>
           </div>
-        </div>        
+        </div>
       </section>
       <!-- aquí se encuentra mis estudios-->
       <section id="estudios">
-        <h3 class="text-fluid"> Estudios: </h3>
+        <h3 class="text-fluid mb-5"> Estudios: </h3>
         <div class="container">
           <div class="row">
             <div class="col-sm-4">
               <div class="card text-bg-danger mb-3">
                 <div class="card-body">
-                  <h5 class="card-title overflow-visible">Primaria Completa: </h5>
-                  <p class="card-text">Escuela N° 157 GOBERNADOR JORGE JOSÉ GALINA. Es un Colegio Estatal en Chubut-Trelew. Dirección:Gobernador Lezana 1650 Villa Italia - TRELEW - RAWSON -  Tel.: 280 - 4421181</p>
+                  <ul>
+                    <li>
+                      <h5 class="card-title overflow-visible">Primaria Completa: </h5>
+                    </li>
+                    <li>
+                      <p class="card-text">Escuela N° 157 GOBERNADOR JORGE JOSÉ GALINA. Es un Colegio Estatal en Chubut-Trelew. Dirección:Gobernador Lezana 1650 Villa Italia - TRELEW - RAWSON -  Tel.: 280 - 4421181</p>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
             <div class="col-sm-4">
               <div class="card text-bg-danger mb-3">
                 <div class="card-body">
-                  <h5 class="card-title overflow-visible">Secundaria Incompleta:</h5>
-                  <p class="card-text"> Colegio Provincial de Educación Secundaria Nº 20 GRAL. JOSÉ DE SAN MARTÍN. Es un Colegio Estatal en Santa Cruz-Caleta Olivia. Dirección:JOSÉ KOLTUM 1370 LOS PINOS - CALETA OLIVIA - DESEADO - Tel.: 297 - 4854056 </p>
+                  <ul>
+                    <li>
+                      <h5 class="card-title overflow-visible">Secundaria Incompleta:</h5>
+                    </li>
+                    <li>
+                      <p class="card-text"> Colegio Provincial de Educación Secundaria Nº 20 GRAL. JOSÉ DE SAN MARTÍN. Es un Colegio Estatal en Santa Cruz-Caleta Olivia. Dirección:JOSÉ KOLTUM 1370 LOS PINOS - CALETA OLIVIA - DESEADO - Tel.: 297 - 4854056 </p>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
             <div class="col-sm-4">
               <div class="card text-bg-danger mb-3">
                 <div class="card-body">
-                  <h5 class="card-title overflow-visible">Argentina Programa #Sé Programar:</h5>
-                  <p class="card-text"><a href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa"  target="_blank" style="color: white;">Argentina Programa</a></p>
+                  <ul>
+                    <li>
+                      <h5 class="card-title overflow-visible">Argentina Programa #Sé Programar:</h5>
+                    </li>
+                    <li>
+                      <p class="card-text"><a href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa"  target="_blank" >Argentina Programa</a></p>
+                    </li>
+                    <li class="img-center">
+                      <img src="romi.jpg" class="img-fluid" alt="..">
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -197,8 +242,8 @@
         </div>
       </section>
       <!-- secccion de habilidades-->
-      <section id="habilidades" >
-        <h4 class="text-fluid">Hard y Soft Skills:</h4>
+      <section id="habilidades">
+        <h4 class="text-fluid mb-5">Hard y Soft Skills:</h4>
         <div class="container text-center">
           <div class="row">
             <div class="col-sm-2 mt-3">
@@ -220,7 +265,7 @@
             <div class="col-sm-2 mt-3">
               <i class="fa-brands fa-bootstrap" style="color: rgb(199, 43, 43);"></i>
             </div>
-            <div class="col-sm-10 ">
+            <div class="col-sm-10">
               <div class="progress mt-4" role="progressbar" aria-label="Example with label" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
                 <div class="progress-bar bg-danger overflow-visible text-dark" style="width: 10%"> 10%</div>
               </div>
@@ -230,7 +275,7 @@
             </div>
             <div class="col-sm-10">
               <div class="progress mt-4" role="progressbar" aria-label="Example with label" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
-               <div class="progress-bar bg-info overflow-visible text-dark" style="width: 5%"> 5%</div>
+                <div class="progress-bar bg-info overflow-visible text-dark" style="width: 5%"> 5%</div>
               </div>
             </div>
           </div>
@@ -238,18 +283,55 @@
       </section>
       <!-- seccion de proyectos-->
       <section id="proyectos">
-        <div class="container text-light ">
-          <h4 class="text-fluid" >Proyectos:</h4>
-          <p class="text-break fw-bold lh-base "> MI PORTFOLIO: Es mi primer proyecto. Si bien empecé el curso de Argentina Programa en Octubre del año 2022, el proyecto en sí empecé a realizarlo una vez que tuve una computadora para hacerlo, o sea hace 3 semanas, gracias a una amiga que me presto.</p>
-          <p class="text-break fw-bold lh-base fs-5"> Este artículo va a ser editado con más información.</p>
+        <h4 class="text-fluid mb-5">Proyectos:</h4>
+        <div class="container text-light">
+          <div class="row">
+            <div class="col-sm-6">
+              <p class="text-break fw-bold lh-base "> MI PORTFOLIO: Es mi primer proyecto. Si bien empecé el curso de Argentina Programa en Octubre del año 2022, el proyecto en sí empecé a realizarlo una vez que tuve una computadora para hacerlo, o sea hace 3 semanas, gracias a una amiga que me presto.</p>
+              <p class="text-break fw-bold lh-base fs-5"> Este artículo va a ser editado con más información.</p>
+            </div>
+            <div class="col-sm-6">
+              <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/img/ejemplo.png" class="img-fluid" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/ejemplo2.png"   class="img-fluid" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/ejemplo3.jpg" class="img-fluid" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/ejemplo4.png" class="img-fluid" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
     <!-- pie de pagina, contiene contactos-->
-    <footer>
+    <footer id="contacto">
       <address class="m-0">
-        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-        <a href="#"><i class="fa-regular fa-envelope"></i> </a>
+        <p class="copyright">Copyright © Romii Diaz 2023</p>
+        <a href="#" data-bs-toggle="dropdown"><i class="fa-brands fa-whatsapp"></i></a>
+        <ul class="dropdown-menu">
+          <p class="dropdown-item">Telefono privado, envíame un Email</p>
+        </ul>
+        <a href="#" data-bs-toggle="dropdown"><i class="fa-regular fa-envelope"></i></a>
+        <ul class="dropdown-menu">
+          <p class="dropdown-item">Email@ejemplo.com</p>
+        </ul>
       </address>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>   

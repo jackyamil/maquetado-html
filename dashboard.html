@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,223 +9,447 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/2fda132b3b.js" crossorigin="anonymous"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <!-- barra de navegacion-->
-        <nav class="navbar">
-          <!-- logo del curso y redes-->
-          <div class="container-fluid">
-            <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/" target="_blank"  > 
-            <img src="assets/img/argentina-programa.jpg" alt="Logo de Argentina Programa"class="d-inline-block align-text-top"><p class="text-light">Argentina Programa</p></a>
-            <div class="max-container mb-3">
-              <a href="#"target="_blank" > <i class="bi bi-facebook"> </i></a>
-              <a href="#"target="_blank" > <i class="bi bi-github" > </i></a>    
-              <!--boton de login-->         
-              <button type="submit"class="btn btn-outline-light"> Salir</button>
-            </div>
+      <!-- barra de navegacion-->
+      <nav class="navbar p-0">
+        <!-- logo del curso y redes-->
+        <div class="container-fluid pt-1">
+          <a class="navbar-brand pt-0 m-0" href="http://127.0.0.1:5500/index.html">
+            <img src="assets/img/argentina-programa.jpg" alt="Logo de Argentina Programa"class="d-inline-block align-text-top">
+            <p class="text-light m-0">Argentina Programa</p>
+          </a>
+          <div class="max-container mt-2">
+            <ul id="redes" class="m-0 p-0">
+              <!--boton de salir-->
+              <li>
+                <button type="submit"class="btn btn-outline-danger mb-2">
+                  <a href="http://127.0.0.1:5500/index.html" class="mx-3">
+                    <i class="fa-solid fa-lock-open"></i>
+                  </a>
+                </button>
+              </li>
+            </ul>
           </div>
-        </nav>  
-    </header>
-    <!--acordeon-->
-    <main>
-      <section id="dashboard" class="dashboard">
-        <div class="accordion" id="accordion">
-             <!--redes y banner-->
-               <div class="accordion-item">
-                <!--este es el boton-->
-                 <h2 class="accordion-header">
-                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                   <i class="fa-solid fa-house m-1"></i> Banner y Redes Sociales</button>
-                 </h2>
-                 <!--este es el formulario-->
-                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion">
-                    <div class="accordion-body">
-                        <div>
-                          <label for="banner" class="form-label">Banner</label>
-                          <input class="form-control" id="banner" type="file" >
-                          <button type="submit"class="btn btn-outline-danger mt-2">Guardar</button>
-                        </div>
-                        <div>
-                          <label for="icono" class="form-label mt-3">Icono</label>
-                          <input class="form-control" id="icono" type="file" >
-                          <button type="submit"class="btn btn-outline-danger mt-2">Guardar </button>
-                        </div>
-                        <div>
-                          <label for="redesSociales" class="form-label mt-3">Redes sociales</label>
-                          <input class="form-control" id="redesSociales" type="text">
-                          <button type="submit"class="btn btn-outline-danger mt-2">Guardar </button>
-                        </div>
-                    </div>
-                 </div>
-               </div>
-             <!--sobre mi-->
-               <div class="accordion-item">
-                <!--este es el boton-->
-                 <h2 class="accordion-header">
-                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                   <i class="fa-solid fa-person-dress m-1"></i>Sobre Mi </button>
-                 </h2>
-                 <!--este es el formulario-->
-                 <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion">
-                   <div class="accordion-body">
-                      <div>
-                         <label for="fotoPerfil" class="form-label">Foto de perfil</label>
-                         <input class="form-control" id="fotoPerfil" type="file" >
-                         <button type="button"class="btn btn-outline-danger mt-2">Guardar</button>
-                      </div>
-                      <div>
-                         <label for="nombreApellido" class="form-label mt-3">Nombre y Apellido</label>
-                         <input type="text" class="form-control" id="nombreApellido" placeholder="Escribir aquí">
-                         <button type="button"class="btn btn-outline-danger mt-2">Guardar</button>
-                      </div>
-                      <div>
-                         <label for="sobreMi" class="form-label mt-3">Sobre mi</label>
-                         <textarea class="form-control" id="sobreMi" rows="3" placeholder="Escribir aquí"></textarea>
-                         <button type="button"class="btn btn-outline-danger mt-2"> Guardar</button>
-                      </div>
-                   </div>
-                 </div>
-               </div>
-             <!--experiencia laboral-->
-               <div class="accordion-item">
-                <!--esto es el boton-->
-                 <h2 class="accordion-header">
-                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                   <i class="fa-solid fa-screwdriver-wrench m-1"></i> Experiencia Laboral</button>
-                 </h2>
-                 <!--esto es el formulario-->
-                 <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion">
-                   <div class="accordion-body">
-                     <div>
-                        <label for="logo" class="form-label">Logo</label>
-                        <input class="form-control" id="logo" type="file">
-                        <button type="submit"class="btn btn-outline-danger mt-2"> Guardar</button>
-                      </div>
-                      <div>
-                        <label for="trabajo" class="form-label mt-3">Trabajo</label>
-                        <input type="text" class="form-control" id="trabajo" placeholder="Escribir aquí">
-                        <button type="submit"class="btn btn-outline-danger mt-2"> Guardar </button>
-                      </div>
-                      <div>
-                        <label for="descripcion" class="form-label mt-3">Descripción</label>
-                        <textarea class="form-control" id="descripcion" rows="3"  placeholder="Escribir aquí"></textarea>
-                        <button type="submit"class="btn btn-outline-danger mt-2">Guardar</button>
-                      </div>
-                   </div>
-                 </div>
-               </div>
-             <!--educaccion-->
-               <div class="accordion-item">
-                <!--este es el boton-->
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                    <i class="fa-solid fa-graduation-cap m-1"></i> Educación</button>
-                  </h2>
-                  <!--este es el formulario--> 
-                  <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordion">
-                    <div class="accordion-body">
-                       <div>
-                        <label for="otroLogo" class="form-label">Logo</label>
-                        <input class="form-control" id="otroLogo" type="file">
-                        <button type="submit"class="btn btn-outline-danger mt-2">Guardar</button>
-                       </div>
-                       <div>
-                         <label for="curso" class="form-label mt-3">Título/Curso</label>
-                         <input type="text" class="form-control" id="curso" placeholder="Escribir aquí">
-                         <button type="submit"class="btn btn-outline-danger mt-2">Guardar</button>
-                       </div>
-                       <div>
-                         <label for="informacion" class="form-label mt-3">Descripción</label>
-                         <textarea class="form-control" id="informacion" rows="3"  placeholder="Escribir aquí"></textarea>
-                         <button type="submit"class="btn btn-outline-danger mt-2">Guardar</button>
-                       </div> 
-                    </div>
-                  </div>             
-               </div>
-             <!--habilidades-->
-               <div class="accordion-item">
-                <!--este es el boton-->
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                    <i class="fa-solid fa-brain m-1"></i> Habilidades </button>
-                  </h2>
-                  <!--este es el formulario-->
-                  <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordion">
-                     <div class="accordion-body">
-                        <div>
-                          <label for="otroIcono" class="form-label">Icono</label>
-                          <input class="form-control" id="otroIcono" type="file">
-                          <button type="submit"class="btn btn-outline-danger mt-2">Guardar</button>
-                        </div>
-                        <div>
-                          <label for="progreso" class="form-label mt-3">Progreso</label>
-                          <input type="text" class="form-control" id="progreso" placeholder="Escribir aquí">
-                          <button type="submit"class="btn btn-outline-danger mt-2">Guardar</button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-             <!--proyectos-->
-               <div class="accordion-item">
-                <!--este es el boton-->
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                    <i class="fa-solid fa-file-circle-check m-1"></i>Proyectos</button>
-                  </h2>
-                  <!--esto es el form-->
-                  <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordion">
-                    <div class="accordion-body">
-                      <div>
-                        <label for="fotos" class="form-label">Fotos</label>
-                        <input class="form-control" id="fotos" type="file">
-                        <button type="submit"class="btn btn-outline-danger mt-2">Guardar</button>
-                      </div>
-                      <div>
-                        <label for="titulo" class="form-label mt-3">Título</label>
-                        <input type="text" class="form-control" id="titulo" placeholder="Escribir aquí">
-                        <button type="submit"class="btn btn-outline-danger mt-2">Guardar</button>
-                      </div>
-                      <div>
-                        <label for="relato" class="form-label mt-3">Descripción</label>
-                        <textarea class="form-control" id="relato" rows="3"  placeholder="Escribir aquí"></textarea>
-                        <button type="submit"class="btn btn-outline-danger mt-2"> Guardar </button>
-                      </div>
-                    </div>
-                  </div>
-               </div>
-             <!--contactos-->
-               <div class="accordion-item">
-                <!--este es el boton-->
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-                    <i class="fa-solid fa-satellite-dish m-1"></i> Mis contactos</button>
-                  </h2>
-                  <!--este es el form-->
-                  <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordion">
-                    <div class="accordion-body">
-                       <div>
-                          <label for="nuevoIcono" class="form-label">Icono</label>
-                          <input class="form-control" id="nuevoIcono" type="file">
-                          <button type="submit"class="btn btn-outline-danger mt-2">Guardar</button>
-                       </div>
-                       <div>
-                          <label for="telefono" class="form-label mt-3">Telefono</label>
-                          <input type="tel" class="form-control" id="telefono" placeholder="Escribir aquí numero de telefono">
-                          <button type="submit"class="btn btn-outline-danger mt-2"> Guardar</button>
-                       </div>
-                       <div>
-                          <label for="correo" class="form-label mt-3">Correo Electronico</label>
-                          <input type="email" class="form-control" id="correo" placeholder="Escribir aquí correo@ejemplo.com">
-                          <button type="submit"class="btn btn-outline-danger mt-2">Guardar</button>
-                       </div>
-                    </div>
-                  </div>
-               </div>
         </div>
-      </section>
-    </main>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>   
-</body>
+      </nav>
+    </header>
+    <div class="img-fondo">
+      <div class="row">
+        <div class="col-1 pt-4 pb-5"></div>
+        <div class="col-10 pt-4 pb-5">
+          <!--acordeon-->
+          <section id="dashboard" class="dashboard">
+            <div class="accordion" id="accordion">
+              <!--redes-->
+              <div class="accordion-item">
+                <!--este es el boton-->
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <i class="fa-solid fa-network-wired"></i> Redes Sociales
+                  </button>
+                </h2>
+                <!--este es el formulario-->
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                  <div class="accordion-body img-fondo">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <form>
+                          <label for="codepen" class="form-label mt-3 text-fluid">Codepen</label>
+                          <input class="form-control" id="codepen" type="url">
+                          <button type="submit"class="btn btn-dark mt-2">Guardar </button>
+                          <button type="submit"class="btn btn-danger mt-2">Eliminar</button>
+                          <button type="submit"class="btn btn-secondary mt-2">Actualizar</button>
+                        </form>
+                      </div>
+                      <div class="col-sm-4">
+                        <form>
+                          <label for="linkedin" class="form-label mt-3 text-fluid">Linkedin</label>
+                          <input class="form-control" id="linkedin" type="url">
+                          <button type="submit"class="btn btn-dark mt-2">Guardar </button>
+                          <button type="submit" class="btn btn-danger mt-2">Eliminar</button>
+                          <button type="submit"class="btn btn-secondary mt-2">Actualizar</button>
+                        </form>
+                      </div>
+                      <div class="col-sm-4">
+                        <form>
+                          <label for="hithub" class="form-label mt-3 text-fluid">GitHub</label>
+                          <input class="form-control" id="github" type="url">
+                          <button type="submit"class="btn btn-dark mt-2">Guardar </button>
+                          <button type="submit"class="btn btn-danger mt-2">Eliminar</button>
+                          <button type="submit"class="btn btn-secondary mt-2">Actualizar</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- banner y img de fondo-->
+              <div class="accordion-item">
+                <!--este es el boton-->
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <i class="fa-regular fa-image m-1"></i>Banner y Foto de Fondo
+                  </button>
+                </h2>
+                <!--este es el formulario-->
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                  <div class="accordion-body img-fondo">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <form>
+                          <label for="banner" class="form-label text-fluid">Banner</label>
+                          <input class="form-control" id="baner" type="file">
+                          <button type="submit"class="btn btn-dark mt-2">Guardar</button>
+                          <button type="submit"class="btn btn-danger mt-2">Eliminar</button>
+                          <button type="submit"class="btn btn-secondary mt-2">Actualizar</button>
+                        </form>
+                      </div>
+                      <div class="col-sm-6">
+                        <form>
+                          <label for="fotoFondo" class="form-label text-fluid">Foto de Fondo</label>
+                          <input class="form-control" id="fotoFondo" type="file">
+                          <button type="submit"class="btn btn-dark mt-2">Guardar</button>
+                          <button type="submit"class="btn btn-danger mt-2">Eliminar</button>
+                          <button type="submit"class="btn btn-secondary mt-2">Actualizar</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--sobre mi-->
+              <div class="accordion-item">
+                <!--este es el boton-->
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <i class="fa-solid fa-person-dress m-1"></i>Sobre Mi 
+                  </button>
+                </h2>
+                <!--este es el formulario-->
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                  <div class="accordion-body img-fondo">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <form>
+                          <label for="fotoPerfil" class="form-label text-fluid">Foto de perfil</label>
+                          <input class="form-control" id="fotoPerfil" type="file">
+                          <button type="submit"class="btn btn-dark mt-2">Guardar</button>
+                          <button type="submit"class="btn btn-danger mt-2">Eliminar</button>
+                          <button type="submit"class="btn btn-secondary mt-2">Actualizar</button>
+                        </form>
+                      </div>
+                      <div class="col-sm-6">
+                        <form>
+                          <label for="nombreApellido" class="form-label text-fluid">Nombre y Apellido</label>
+                          <input type="text" class="form-control" id="nombreApellido" placeholder="Escribir aquí">
+                          <button type="submit"class="btn btn-dark mt-2">Guardar</button>
+                          <button type="submit"class="btn btn-danger mt-2">Eliminar</button>
+                          <button type="submit"class="btn btn-secondary mt-2">Actualizar</button>
+                        </form>
+                      </div>
+                    </div>
+                    <form>
+                      <label for="sobreMi" class="form-label text-fluid">Sobre mi</label>
+                      <textarea class="form-control" id="sobreMi" rows="3" placeholder="Escribir aquí"></textarea>
+                      <button type="submit"class="btn btn-dark mt-2 mb-3"> Guardar</button>
+                      <button type="submit"class="btn btn-danger mt-2 mb-3">Eliminar</button>
+                      <button type="submit"class="btn btn-secondary mt-2 mb-3">Actualizar</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <!--experiencia laboral-->
+              <div class="accordion-item">
+                <!--esto es el boton-->
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    <i class="fa-solid fa-screwdriver-wrench m-1"></i> Experiencia Laboral
+                  </button>
+                </h2>
+                <!--esto es el formulario-->
+                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                  <div class="accordion-body img-fondo">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <form>
+                          <label for="logoUno" class="form-label text-fluid">Logo</label>
+                          <input class="form-control" id="logoUno" type="file">
+                          <label for="trabajoUno" class="form-label mt-3 text-fluid">Empleada doméstica</label>
+                          <input type="text" class="form-control" id="trabajoUno" placeholder="Escribir aquí">
+                          <label for="descripcionUno" class="form-label mt-3 text-fluid">Descripción</label>
+                          <textarea class="form-control" id="descripcionUno" rows="3"  placeholder="Escribir aquí"></textarea>
+                          <button type="submit"class="btn btn-dark mt-2">Guardar</button>
+                          <button type="submit"class="btn btn-danger mt-2">Eliminar</button>
+                          <button type="submit"class="btn btn-secondary mt-2">Actualizar</button>
+                        </form>
+                      </div>
+                      <div class="col-sm-6">
+                        <form>
+                          <label for="logoDos" class="form-label text-fluid">Logo</label>
+                          <input class="form-control" id="logoDos" type="file">
+                          <label for="trabajoDos" class="form-label mt-3 text-fluid">Hotel Capri</label>
+                          <input type="text" class="form-control" id="trabajoDos" placeholder="Escribir aquí">
+                          <label for="descripcionDos" class="form-label mt-3 text-fluid">Descripción</label>
+                          <textarea class="form-control" id="descripcionDos" rows="3"  placeholder="Escribir aquí"></textarea>
+                          <button type="submit"class="btn btn-dark mt-2">Guardar</button>
+                          <button type="submit"class="btn btn-danger mt-2">Eliminar</button>
+                          <button type="submit"class="btn btn-secondary mt-2">Actualizar</button>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <form>
+                          <label for="logoTres" class="form-label text-fluid">Logo</label>
+                          <input class="form-control" id="logoTres" type="file">
+                          <label for="trabajoTres" class="form-label mt-3 text-fluid">Niñera</label>
+                          <input type="text" class="form-control" id="trabajoTres" placeholder="Escribir aquí">
+                          <label for="descripcionTres" class="form-label mt-3 text-fluid">Descripción</label>
+                          <textarea class="form-control" id="descripcionTres" rows="3"  placeholder="Escribir aquí"></textarea>
+                          <button type="submit"class="btn btn-dark mt-2">Guardar</button>
+                          <button type="submit"class="btn btn-danger mt-2">Eliminar</button>
+                          <button type="submit"class="btn btn-secondary mt-2">Actualizar</button>
+                        </form>
+                      </div>
+                      <div class="col-sm-6">
+                        <form>
+                          <label for="logoCuatro" class="form-label text-fluid">Logo</label>
+                          <input class="form-control" id="logoCuatro" type="file">
+                          <label for="trabajoCuatro" class="form-label mt-3 text-fluid">Niñera</label>
+                          <input type="text" class="form-control" id="trabajoCuatro" placeholder="Escribir aquí">
+                          <label for="descripcionCuatro" class="form-label mt-3 text-fluid">Descripción</label>
+                          <textarea class="form-control" id="descripcionCuatro" rows="3"  placeholder="Escribir aquí"></textarea>
+                          <button type="submit"class="btn btn-dark mt-2">Guardar</button>
+                          <button type="submit"class="btn btn-danger mt-2">Eliminar</button>
+                          <button type="submit"class="btn btn-secondary mt-2">Actualizar</button>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">
+                        <form>
+                          <label for="logoCinco" class="form-label text-fluid">Logo</label>
+                          <input class="form-control" id="logoCinco" type="file">
+                          <label for="trabajoCinco" class="form-label mt-3 text-fluid">Peluqueria Narcisa</label>
+                          <input type="text" class="form-control" id="trabajoCinco" placeholder="Escribir aquí">
+                          <label for="descripcionCinco" class="form-label mt-3 text-fluid">Descripción</label>
+                          <textarea class="form-control" id="descripcionCinco" rows="3"  placeholder="Escribir aquí"></textarea>
+                          <button type="submit"class="btn btn-dark mt-2">Guardar</button>
+                          <button type="submit"class="btn btn-danger mt-2">Eliminar</button>
+                          <button type="submit"class="btn btn-secondary mt-2">Actualizar</button>
+                        </form>
+                      </div>
+                      <div class="col-6"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--educaccion-->
+              <div class="accordion-item">
+                <!--este es el boton-->
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    <i class="fa-solid fa-graduation-cap m-1"></i> Educación
+                  </button>
+                </h2>
+                <!--este es el formulario-->
+                <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                  <div class="accordion-body img-fondo">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <form>
+                          <label for="educacionUno" class="form-label mt-3 text-fluid">Primaria</label>
+                          <input type="text" class="form-control" id="educacionUno" placeholder="Escribir aquí">
+                          <label for="descripcionUno" class="form-label mt-3 text-fluid">Descripción</label>
+                          <textarea class="form-control" id="descripcionUno" rows="3"  placeholder="Escribir aquí"></textarea>
+                          <button type="submit"class="btn btn-dark mt-2">Guardar</button>
+                          <button type="submit"class="btn btn-danger mt-2">Eliminar</button>
+                          <button type="submit"class="btn btn-secondary mt-2">Actualizar</button>
+                        </form>
+                      </div>
+                      <div class="col-sm-6">
+                        <form>
+                          <label for="educacionDos" class="form-label mt-3 text-fluid">Secundaria</label>
+                          <input type="text" class="form-control" id="educacionDos" placeholder="Escribir aquí">
+                          <label for="descripcionDos" class="form-label mt-3 text-fluid">Descripción</label>
+                          <textarea class="form-control" id="descripcionDos" rows="3"  placeholder="Escribir aquí"></textarea>
+                          <button type="submit"class="btn btn-dark mt-2">Guardar</button>
+                          <button type="submit"class="btn btn-danger mt-2">Eliminar</button>
+                          <button type="submit"class="btn btn-secondary mt-2">Actualizar</button>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <form>
+                          <label for="educacionTres" class="form-label mt-3 text-fluid">Curso/Titulo</label>
+                          <input type="text" class="form-control" id="educacionTres" placeholder="Escribir aquí">
+                          <label for="enlace" class="form-label mt-3 text-fluid">Enlace</label>
+                          <input  type="url" class="form-control" id="enlace" placeholder="Escribir aquí">
+                          <label for="certificado" class="form-label mt-3 text-fluid">certificado</label>
+                          <input class="form-control" id="certificado" type="file">
+                          <button type="submit"class="btn btn-dark mt-2">Guardar</button>
+                          <button type="submit"class="btn btn-danger mt-2">Eliminar</button>
+                          <button type="submit"class="btn btn-secondary mt-2">Actualizar</button>
+                        </form>
+                      </div>
+                      <div class="col-sm-6"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--habilidades-->
+              <div class="accordion-item">
+                <!--este es el boton-->
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                    <i class="fa-solid fa-brain m-1"></i> Habilidades
+                  </button>
+                </h2>
+                <!--este es el formulario-->
+                <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                  <div class="accordion-body img-fondo">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <form>
+                          <label for="iconoUno" class="form-label text-fluid">Icono/html</label>
+                          <input class="form-control" id="iconoUno" type="text">
+                          <label for="progresoUno" class="form-label mt-3 text-fluid">Porsentaje</label>
+                          <input type="number" class="form-control" id="progresoUno">
+                          <button type="submit"class="btn btn-dark mt-2">Guardar</button>
+                          <button type="submit"class="btn btn-danger mt-2">Eliminar</button>
+                          <button type="submit"class="btn btn-secondary mt-2">Actualizar</button>
+                        </form>
+                      </div>
+                      <div class="col-sm-6">
+                        <form>
+                          <label for="iconoDos" class="form-label text-fluid">Icono/CSS</label>
+                          <input class="form-control" id="iconoDos" type="text">
+                          <label for="progresoDos" class="form-label mt-3 text-fluid">Porsentaje</label>
+                          <input type="number" class="form-control" id="progresoDos">
+                          <button type="submit"class="btn btn-dark mt-2">Guardar</button>
+                          <button type="submit"class="btn btn-danger mt-2">Eliminar</button>
+                          <button type="submit"class="btn btn-secondary mt-2">Actualizar</button>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <form>
+                          <label for="iconoTres" class="form-label text-fluid">Icono/Bootstrap</label>
+                          <input class="form-control" id="iconoTres" type="text">
+                          <label for="progresoTres" class="form-label mt-3 text-fluid">Porsentaje</label>
+                          <input type="number" class="form-control" id="progresoTres">
+                          <button type="submit"class="btn btn-dark mt-2">Guardar</button>
+                          <button type="submit"class="btn btn-danger mt-2">Eliminar</button>
+                          <button type="submit"class="btn btn-secondary mt-2">Actualizar</button>
+                        </form>
+                      </div>
+                      <div class="col-sm-6">
+                        <form>
+                          <label for="iconoCuatro" class="form-label text-fluid">Icono/JS</label>
+                          <input class="form-control" id="iconoCuatro" type="text">
+                          <label for="progresoCuatro" class="form-label mt-3 text-fluid">Porsentaje</label>
+                          <input type="number" class="form-control" id="progresoCuatro">
+                          <button type="submit"class="btn btn-dark mt-2">Guardar</button>
+                          <button type="submit"class="btn btn-danger mt-2">Eliminar</button>
+                          <button type="submit"class="btn btn-secondary mt-2">Actualizar</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--proyectos-->
+              <div class="accordion-item">
+                <!--este es el boton-->
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                    <i class="fa-solid fa-file-circle-check m-1"></i>Proyectos
+                  </button>
+                </h2>
+                <!--esto es el form-->
+                <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                  <div class="accordion-body img-fondo">
+                    <form>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <label for="fotoUno" class="form-label text-fluid">Foto-1</label>
+                          <input class="form-control" id="fotoUno" type="file">
+                          <label for="fotoDos" class="form-label mt-2 text-fluid">Foto-2</label>
+                          <input class="form-control" id="fotoDos" type="file">
+                        </div>
+                        <div class="col-sm-6">
+                          <label for="fotosTres" class="form-label text-fluid">Foto-3</label>
+                          <input class="form-control" id="fotoTres" type="file">
+                          <label for="fotoCuatro" class="form-label mt-2 text-fluid">Foto-4</label>
+                          <input class="form-control" id="fotoCuatro" type="file">
+                        </div>
+                      </div>
+                      <label for="relato" class="form-label text-fluid">Descripción</label>
+                      <textarea class="form-control" id="relato" rows="3"  placeholder="Escribir aquí"></textarea>
+                      <button type="submit"class="btn btn-dark mt-2 mb-3"> Guardar </button>
+                      <button type="submit"class="btn btn-danger mt-2 mb-3">Eliminar</button>
+                      <button type="submit"class="btn btn-secondary mt-2 mb-3">Actualizar</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <!--contactos-->
+              <div class="accordion-item">
+                <!--este es el boton-->
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                    <i class="fa-solid fa-satellite-dish m-1"></i> Mis contactos
+                  </button>
+                </h2>
+                <!--este es el form-->
+                <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                  <div class="accordion-body img-fondo">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <form>
+                          <label for="telefono" class="form-label text-fluid">Telefono</label>
+                          <input type="text" class="form-control" id="telefono">
+                          <button type="submit"class="btn btn-dark mt-2"> Guardar</button>
+                          <button type="submit"class="btn btn-danger mt-2">Eliminar</button>
+                          <button type="submit"class="btn btn-secondary mt-2">Actualizar</button>
+                        </form>
+                      </div>
+                      <div class="col-sm-6">
+                        <form>
+                          <label for="correo" class="form-label text-fluid">Correo Electronico</label>
+                          <input type="email" class="form-control" id="correo" placeholder="correo@ejemplo.com">
+                          <button type="submit"class="btn btn-dark mt-2">Guardar</button>
+                          <button type="submit"class="btn btn-danger mt-2">Eliminar</button>
+                          <button type="submit"class="btn btn-secondary mt-2">Actualizar</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section> 
+        </div>
+        <div class="col-1 pt-4 pb-5"></div>
+      </div>
+    </div>
+    <footer id="contacto">
+      <address class="m-0">
+        <p class="copyright">Copyright © Romii Diaz 2023</p>
+        <a href="#" data-bs-toggle="dropdown"><i class="fa-brands fa-whatsapp"></i></a>
+        <ul class="dropdown-menu">
+          <p class="dropdown-item">Telefono privado, envíame un Email</p>
+        </ul>
+        <a href="#" data-bs-toggle="dropdown"><i class="fa-regular fa-envelope"></i></a>
+        <ul class="dropdown-menu">
+          <p class="dropdown-item">Email@ejemplo.com</p>
+        </ul>
+      </address>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
 </html>

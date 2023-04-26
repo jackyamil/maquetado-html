@@ -3,42 +3,56 @@
     padding:0 ;
     overflow-x: hidden;
 }
-/* color de babecera*/
-header{
-    background-color: rgb(0, 7, 7);
+/*color a la barra de navegacion y menu*/
+.container-fluid{
+    background-color: black;
 }
-/*estilos de cabecera*/
-.navbar {
-    display: flex;
+/*  estilo al logo y menu*/
+.navbar-brand{
+    margin-top: 0;
+    display:flex ;  
 }
-/*  estilo al logo */
-.container-fluid img{
+/*este es del logo solo*/
+.navbar-brand img{
     border-radius: 1rem;
     width: 3rem; 
     height: 2.5rem;  
 }
 /* estilo a las redes*/
-.max-container a {
-    font-size: 1.9rem;
+ul #redes{
+    padding-left: 0%;
+}
+#redes li{
+    display: inline;  
+}
+#redes li a{
+    margin-right: 0.5rem;
+    font-size: 1.7rem;
     text-decoration: none;
     color:rgb(255, 0, 0)
 }
-/* medidas del banner*/
-.img-fluid{
-    max-width: 100%;
-    height: auto;
+#redes li a:hover{
+    color:rgb(112, 112, 116);
 }
-/*color fondo del menu*/
-.container-fluid{
-    background-color: rgb(0, 7, 7);
+/*estilo al boton*/
+#redes li button a {
+    font-size: 1rem;
+    text-align: center;
+    padding-left: 6%;
+}
+/* estilo al banner*/
+.container-center{
+    
+    padding: 0 3%;
+    background-color: rgb(0, 0, 0);
 }
 /*estilo al menu*/
-.navbar-brand{
-    margin:1% 2%;
-    display: flex;
-    align-content: center;
-    background-color: rgb(0, 7, 7);
- }
+.navbar-brand button{
+    padding-left: 0.2rem;
+}
+i.fa-solid{
+    margin-right: 0.5rem;
+}
 /* imagen de fondo*/
 .img-fondo{
     background-image: url(../img/fondo2.png);
@@ -52,49 +66,74 @@ header{
 }
 /*estilo a foto perfil*/
 .col-sm-4 img{
-    border-radius: 100rem;
-    width: 15rem;
+    border-radius: 100%;
+    width: 13rem;
 }
 /*estilo a imagen ,nombre y titulo*/
 .container {
-    margin: 3% 5%;
     font-style:oblique;
     color:rgb(0, 255, 0) 
 }
 /* estilo al nombre*/
 .container h1{
-    font-size: 2.5rem;
     overflow-y: hidden;
+    font-style: oblique;
+    color:rgb(0, 255, 0)
 }
-/* estilo al titulo*/
+/* estilo atodos los  titulos*/
 .container h4{
-    overflow-y: hidden;  
+    overflow-y: hidden;
+    color:rgb(224, 255, 47)  
 }
-/* estilo a acerca de mi*/
-.text-center{   
-    color: rgb(187, 255, 0);
+/*estilo a todas las secciones*/
+section{
+    margin-top: 5rem;
 }
-/* estilo a los h1 de cada seccion*/
+/* estilo a los titulos de cada seccion desde sobre mi hasta proyectos*/
 .text-fluid {
     margin: 0 4%;
     overflow-y: hidden;
     color:rgb(0, 255, 0)
 }
-/* estilo a las listas*/
+/* estilo a la imagen de experiencia laboral*/
 .col-4 img{
     height: 5rem;
 }
-/* estilo a las habilidades*/
-.container-center{
-    margin: 3% 5%;
+/*estudios*/
+.card-body ul{
+    padding-left: 0;
 }
+.card-text {
+    color:rgb(61, 58, 58) ;
+    font-family: cursive;
+}
+.card-text a{
+    color:rgb(61, 58, 58) ;
+    font-family: cursive;
+}
+.card-text a:hover{
+    color: rgb(152, 240, 240);
+}
+.col-sm-4 ul li img{
+    border-radius: 0%;
+   width: auto;  
+}
+/*logo de habilidades*/
 .col-sm-2 i{
     font-size: 5rem;
+}
+/*estilos a proyectos*/
+.col-sm-6{
+    padding-bottom: 6%;
 }
 /* estilo a pie de pag.*/
 footer{ 
     background-color: black;
     text-decoration: none;
+}
+.copyright{
+    margin-right: 32%;
+    margin-top: 0.5rem;
 }
 /*estilo a pie de pagina*/
 address{ 
@@ -104,27 +143,25 @@ address{
 /*logo de redes en pie de pagina */
 address a{
     font-size: 1.8rem ;
-margin-right: 2rem;
-color:rgb(248, 3, 3)
+    margin-right: 2rem;
+    color:rgb(248, 3, 3)
 }
 /*administracion*/
-main{
-    background-color: rgb(248, 92, 2);
-}
 .dashboard{
     margin: 1% 5%;
 }
 .accordion-button:not(.collapsed) {
-    --bs-accordion-active-color: rgb(0, 0, 0);
-    --bs-accordion-active-bg : red;
+    --bs-accordion-active-color: rgb(0, 250, 0);
+    --bs-accordion-active-bg : rgb(61, 51, 51);
  }
 .accordion-header button{
     font-style: oblique;
     font-size: large;
-    color:rgb(250, 7, 7);
+    color:rgb(255, 0, 0);
 }
 .accordion-header button i{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
 }
 
-  
+
+

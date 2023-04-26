@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro</title>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/2fda132b3b.js" crossorigin="anonymous"></script>  
+    </head>
+    <body>
+        <!--cabecera-->
+        <header>
+            <!-- barra de navegacion-->
+            <nav class="navbar">
+                <!-- logo del curso y redes-->
+                <div class="container-fluid pt-1">
+                    <a class="navbar-brand pt-0 m-0" href="http://127.0.0.1:5500/index.html">
+                        <img src="assets/img/argentina-programa.jpg" alt="Logo de Argentina Programa"class="d-inline-block align-text-top">
+                        <p class="text-light m-0">Argentina Programa</p>
+                    </a>
+                    <div class="max-container mt-2">
+                        <ul id="redes" class="m-0 p-0">
+                            <li>
+                                <button type="submit"class="btn btn-outline-danger mb-2">
+                                    <a href="http://127.0.0.1:5500/index.html" class="mx-3">
+                                        <i class="fa-solid fa-lock"></i>
+                                    </a>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div class="modal-dialog pb-5 mt-5">
+                        <div class="modal-content bg-danger">
+                            <div class="modal-body bg-dark m-5 mb-0">
+                                <form>
+                                    <div class="m-3">
+                                        <label for="email1" class="form-label text-light">Correo</label>
+                                        <input type="email" class="form-control" id="email1" placeholder="email@ejemplo.com">
+                                    </div>
+                                    <div class="m-3">
+                                        <label for="password1" class="form-label text-light">Contraseña</label>
+                                        <input type="password" class="form-control" id="password1" placeholder="Contraseña">
+                                    </div>
+                                    <div class="m-3">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input " id="dropdownCheck">
+                                            <label class="form-check-label text-light" for="dropdownCheck">Recordar</label>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-outline-danger mb-3 mx-3">Crear cuenta</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer m-4">
+                                <div class="text-light">
+                                    <p class="text-break fw-bold lh-sm overflow-visible mx-3">Ya tienes una cuenta </p>
+                                </div>
+                                <button class="btn btn-sm btn-outline-dark" type="submit">
+                                    <a class="nav-link"href="http://127.0.0.1:5500/login.html">Inicia sesión</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+        <footer id="contacto">
+            <address class="m-0">
+                <p class="copyright">Copyright © Romii Diaz 2023</p>
+                <a href="#" data-bs-toggle="dropdown"><i class="fa-brands fa-whatsapp"></i></a>
+                <ul class="dropdown-menu">
+                    <p class="dropdown-item">Telefono privado, envíame un Email</p>
+                </ul>
+                <a href="#" data-bs-toggle="dropdown"><i class="fa-regular fa-envelope"></i></a>
+                <ul class="dropdown-menu">
+                    <p class="dropdown-item">Email@ejemplo.com</p>
+                </ul>
+            </address>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    </body>
+</html>
